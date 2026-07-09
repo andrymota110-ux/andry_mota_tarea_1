@@ -26,8 +26,8 @@ El programa permite:
 **Sueldo mensual:** RD$50,000  
 **Resultado:** Se calcula el ISR correspondiente.
 
+<img width="1918" height="1078" alt="Captura de pantalla 2026-07-09 163422" src="https://github.com/user-attachments/assets/80c8f559-cd82-4127-8c7d-340764a230d4" />
 
-<img width="1705" height="688" alt="Captura de pantalla 2026-07-09 175426" src="https://github.com/user-attachments/assets/4acb3d12-db13-4e3e-ae9f-5be5ee0ba4db" />
 
 
 ### Prueba 3
@@ -35,7 +35,7 @@ El programa permite:
 **Resultado:** Se calcula el ISR según el tramo salarial.
 
 
-<img width="1705" height="688" alt="Captura de pantalla 2026-07-09 175426" src="https://github.com/user-attachments/assets/f8eb8a49-523b-4004-afe7-93151d658cca" />
+<img width="1681" height="950" alt="Captura de pantalla 2026-07-09 175500" src="https://github.com/user-attachments/assets/8748ed5e-e065-4499-8f1d-12bc514a6ab1" />
 
 
 
