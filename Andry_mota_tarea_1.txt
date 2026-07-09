@@ -1,1 +1,58 @@
-﻿
+﻿#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double sueldoMensual, sueldoAnual;
+    double isrAnual = 0, isrMensual = 0;
+    double sueldoNetoMensual, sueldoNetoAnual;
+
+    cout << "==========================================" << endl;
+    cout << "        CALCULADORA DE ISR 2026" << endl;
+    cout << "        Republica Dominicana" << endl;
+    cout << "==========================================" << endl;
+
+    cout << "Ingrese el sueldo mensual del empleado: RD$ ";
+    cin >> sueldoMensual;
+
+    sueldoAnual = sueldoMensual * 12;
+
+    if (sueldoAnual <= 416220.00) {
+        isrAnual = 0;
+    }
+    else if (sueldoAnual <= 624329.00) {
+        isrAnual = (sueldoAnual - 416220.00) * 0.15;
+    }
+    else if (sueldoAnual <= 867123.00) {
+        isrAnual = 31216.00 + ((sueldoAnual - 624329.00) * 0.20);
+    }
+    else {
+        isrAnual = 79776.00 + ((sueldoAnual - 867123.00) * 0.25);
+    }
+
+    isrMensual = isrAnual / 12;
+    sueldoNetoAnual = sueldoAnual - isrAnual;
+    sueldoNetoMensual = sueldoMensual - isrMensual;
+
+    cout << fixed << setprecision(2);
+
+    cout << "\n========== RESULTADO ==========" << endl;
+    cout << "Sueldo mensual: RD$ " << sueldoMensual << endl;
+    cout << "Sueldo anual: RD$ " << sueldoAnual << endl;
+
+    if (isrAnual == 0) {
+        cout << "ISR anual: RD$ 0.00 (No aplica)" << endl;
+        cout << "ISR mensual: RD$ 0.00 (No aplica)" << endl;
+    }
+    else {
+        cout << "ISR anual a descontar: RD$ " << isrAnual << endl;
+        cout << "ISR mensual aproximado: RD$ " << isrMensual << endl;
+    }
+
+    cout << "Sueldo neto anual: RD$ " << sueldoNetoAnual << endl;
+    cout << "Sueldo neto mensual: RD$ " << sueldoNetoMensual << endl;
+
+    cout << "================================" << endl;
+
+    return 0;
+}
