@@ -39,6 +39,8 @@ El programa permite:
 
 
 
-Andry
+
 
 Andry Mota
+Kevin Morales
+Yariel Nova
